@@ -13,12 +13,12 @@ openai.api_key = 'sk-....'
 
 arXivから論文を検索、xml形式で保存し、要約を作成
 ```console
-$ python query_arxiv.py  [-d directory] [-n num-papers] [-y from-year] "search keywords"  
+$ python query_arxiv.py  [-d 論文と要約を保存するフォルダのパス] [-n 要約する論文の本数] [-y 何年からの論文を見たいか(年数を入力)] "検索する単語"  
 ```
 
-ダウンロードした情報からスライド(markdown)を作成
+ダウンロードした情報からスライド(markdown)を作成(ここで選んだキーワードを含む論文をパワポ化する)
 ```
-$ python mkmd.py [-o output.md] [-d directory] "keyword"
+$ python mkmd.py [-o .mdファイルの名前（ex. my_output.md）] [-d Step.1で論文と要約を保存したフォルダのパス] "Step.1で取得した論文の中に含まれるキーワード"
 ```
 
 directory はxmlファイルが保存されるディレクトリ
