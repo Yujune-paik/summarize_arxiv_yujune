@@ -25,7 +25,7 @@ directory はxmlファイルが保存されるディレクトリ
 
 生成された ***.md ファイルは marp (https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode ) に準拠しているので、　VS Codeで読み込めばスライド形式として閲覧したり、PDFファイルとして保存することができます：
 
-（生成例）
+生成例
 <img src="./img0.png" width="480">
 <img src="./img1.png" width="480">
 
