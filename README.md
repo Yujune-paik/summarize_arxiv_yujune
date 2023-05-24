@@ -25,6 +25,16 @@ directory はxmlファイルが保存されるディレクトリ
 
 生成された ***.md ファイルは marp (https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode ) に準拠しているので、　VS Codeで読み込めばスライド形式として閲覧したり、PDFファイルとして保存することができます：
 
+## コマンド例
+### Step.1
+```
+python query_arxiv.py  --dir ./xmls --num 10 --year 2017 "Ryo Suzuki"
+```
+### Step.2
+```
+python mkmd.py -o my_output.md -d ./xmls "3D"
+```
+
 ## 生成例
 <img src="./img0.png" width="480">
 <img src="./img1.png" width="480">
